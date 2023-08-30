@@ -1,0 +1,201 @@
+Index
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Approve/Deny Requests</h4>
+    <main>
+        
+        <a href="http://127.0.0.1:5500/customer.html" target="_main"> For book customers </a>
+        <br>
+        <a href="http://127.0.0.1:5500/vendor.html" target="_main"> For paper vendors </a>
+    </main>
+    
+</body>
+</html>
+
+Customer
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h4>Requests for ....</h4>
+ <pre>
+    1. <a href="http://127.0.0.1:5500/notebook.html" target="_main"> A4 Paper Notebook </a>
+    2. <a href="http://127.0.0.1:5500/handcover.html" target="_main">Letter Handcover</a>
+ </pre>
+    
+</body>
+</html>
+
+Vendor
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Requests for ....</h4>
+    <pre>
+    1. <a href="http://127.0.0.1:5500/A4%20Paper.html" target="_main"> A4 Paper  </a>
+    2. <a href="http://127.0.0.1:5500/ink.html" target="_main">Ink</a>
+    </pre>
+</body>
+</html>
+
+Notebook
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>A4 Paper notebook Approval</title>
+  </head>
+  <body>
+    <button id="openDialog"> A4 Paper notebook</button>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>A4 paper notebook</h2>
+        <p>Do you approve the A4 paper notebook?</p>
+        <button id="approveBtn">Approve</button>
+        <button id="denyBtn">Deny</button>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
+
+Handcover
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Letter Handcover Approval</title>
+  </head>
+  <body>
+    <button id="openDialog"> Letter Handcover</button>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Letter Handcover</h2>
+        <p>Do you approve the A4 paper notebook?</p>
+        <button id="approveBtn">Approve</button>
+        <button id="denyBtn">Deny</button>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
+
+A4 paper
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>A4 Paper Approval</title>
+  </head>
+  <body>
+    <button id="openDialog"> A4 Paper </button>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>A4 paper </h2>
+        <p>Do you approve the A4 paper ?</p>
+        <button id="approveBtn">Approve</button>
+        <button id="denyBtn">Deny</button>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
+
+Ink
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Ink Approval</title>
+  </head>
+  <body>
+    <button id="openDialog"> Ink</button>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Ink</h2>
+        <p>Do you approve the  Ink?</p>
+        <button id="approveBtn">Approve</button>
+        <button id="denyBtn">Deny</button>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
+
+Cart
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart System</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shopping Cart System</h1>
+    </header>
+
+    <section id="order-section">
+        <h2>Your Orders</h2>
+        <form action="checkout.php" method="POST">
+           
+            <label for="product1">Product 1:</label>
+            <input type="number" id="product1" name="product1" min="0" value="0">
+            <span>BDT10.00 each</span><br>
+
+            <label for="product2">Product 2:</label>
+            <input type="number" id="product2" name="product2" min="0" value="0">
+            <span>BDT15.00 each</span><br>
+            
+            
+
+            <button type="submit">Checkout</button>
+        </form>
+    </section>
+
+</body>
+</html>

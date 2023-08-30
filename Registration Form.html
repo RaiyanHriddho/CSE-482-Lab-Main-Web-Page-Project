@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="form_field">
+      <h1>Registration</h1>
+      <form method="post">
+        
+        <div class="name">
+          <table style="width:100%">
+            <tr>
+              <td>
+                <div class="txt_field">
+                  <input type="text" required>
+                  <span></span>
+                  <label>First name</label>
+                </div>
+              </td>
+              <td>
+                &nbsp;&nbsp;
+              </td>
+              <td>
+                <div class="txt_field">
+                  <input type="text" required>
+                  <span></span>
+                  <label>Last name</label>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        
+        <div class="dob">
+          <table style="width:100%">
+            <tr>
+              <td>
+                <label>Date Of Birth: </label>
+              </td>
+              <td>
+                &nbsp;&nbsp;
+              </td>
+              <td>
+                <div class="txt_field">
+                  <input type="date" required>
+                  <span></span>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        
+        <div class="txt_field">
+          <input type="email" required>
+          <span></span>
+          <label>Email</label>
+        </div>
+        <div class="txt_field">
+          <input type="number" required>
+          <span></span>
+          <label>Phone Number</label>
+        </div>
+
+           
+        <div class="gend" required>  
+          <label>Gender : </label>
+          <input type="radio" value="Male" name="gender" checked > Male&nbsp;&nbsp; 
+          <input type="radio" value="Female" name="gender"> Female&nbsp;&nbsp;
+          <input type="radio" value="Other" name="gender"> Other&nbsp;&nbsp;
+        </div>  
+
+        <div class="usrtype" style="width:100%">
+          <label>Usertype: </label>
+              <select name="Usertype" required>
+                <option value="customer"checked>Customer</option> 
+                <option value="vendor">Vendor</option> 
+                <option value="admin">Admin</option> 
+              </select>
+        </div>  
+      
+        <div class="txt_field">
+          <input type="password" required>
+          <span></span>
+          <label>Set Password</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" required>
+          <span></span>
+          <label>Confirm Password</label>
+        </div>
+        
+        <input type="submit" value="Register">
+        <div class="registration">
+          Already have an account? <a href="Login Form.html"><u>Login</u></a>
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>
